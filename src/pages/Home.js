@@ -3,12 +3,15 @@ import { Link } from "react-router-dom";
 import BannerImage from "../assets/pizza.jpeg";
 import "../styles/Home.css";
 
-function App() {
+function Home() {
   return (
-    <div className="App">
-      <h1>Hello World!</h1>
+    <div className="home" style={{ backgroundImage: `url(${BannerImage})` }}>
+      <div className="headerContainer">
+        <h1> Pedro's Pizzeria </h1>
+        <p> PIZZA TO FIT ANY TASTE</p>
+      </div>
     </div>
   );
 }
 
-export default App;
+export default Home;
